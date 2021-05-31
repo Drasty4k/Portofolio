@@ -171,6 +171,15 @@ body.scale-cv{
   transform: translate(5px, 0)
 }
 
+.scale-cv .projects__content .projects__title{
+  font-size: 13px;
+}
+
+.scale-cv .projects__content .right,
+.scale-cv .projects__content .left{
+  display: none;
+}
+
 .scale-cv .education__data,
 .scale-cv .experience__data{
   gap: .25rem;
