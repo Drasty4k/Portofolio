@@ -152,6 +152,10 @@ body.scale-cv{
   gap: 1rem;
 }
 
+.scale-cv .certificate__title .bx-link{
+  display: none;
+}
+
 .scale-cv .education__time,
 .scale-cv .experience__time{
   padding-right: .5rem;
@@ -487,7 +491,18 @@ img{
 }
 
 .certificate__title a{
-  color: var(--h3-font-size);
+  color: var(--text-color);
+  transition: all 0.1s linear;
+}
+
+.certificate__title a:hover{
+  color: #5a5959
+}
+
+.certificate__title .bx-link{
+  position: relative;
+  top: 1.5px;
+  left: 1px;
 }
 
 /*========== PROJECTS ==========*/
@@ -551,12 +566,12 @@ img{
 
 .scrolltop{
   position: fixed;
-  right: 1rem;
+  right: 1.2rem;
   bottom: -20%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: .3rem;
+  padding: .4rem;
   background-color: var(--container-color-alt);
   border-radius: .4rem;
   z-index: var(--z-tooltip);
@@ -565,7 +580,7 @@ img{
 }
 
 .scrolltop__icon{
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: var(--text-color);
 }
 
