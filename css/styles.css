@@ -156,6 +156,10 @@ body.scale-cv{
   display: none;
 }
 
+.scale-cv .certificate__title a{
+  color: var(--text-color);
+}
+
 .scale-cv .education__time,
 .scale-cv .experience__time{
   padding-right: .5rem;
@@ -510,7 +514,6 @@ img{
 .projects__container{
   grid-template-columns: repeat(1, 1fr);
   margin-top: var(--mb-2);
-
 }
 
 .projects__img{
@@ -518,15 +521,21 @@ img{
   transition: 0.3s;
 }
 
+.projects__content .right,
+.projects__content .left{
+  display: inline-flex;
+  
+}
+
 .projects__content .right{
-  margin-left: 150px;
-  margin-top: -22.6px;
+  margin-left: 83px;
 }
 
 .projects__content .right a,
 .projects__content .left a {
   color:var(--text-color);
   font-weight: bold;
+  transition: all 0.2s linear;
 }
 
 .projects__content .right .coach:hover,
@@ -537,6 +546,16 @@ img{
 .projects__content .right .game:hover,
 .projects__content .left .game:hover{
   color: #880017;
+}
+
+.projects__content .right .shop:hover,
+.projects__content .left .shop:hover{
+  color: #575758;
+}
+
+.projects__content .right .page:hover,
+.projects__content .left .page:hover{
+  color: #7857fe;
 }
 
 .projects__img:hover{
@@ -597,7 +616,6 @@ img{
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem .5rem;
   }
-  
 }
 
 
@@ -643,17 +661,17 @@ img{
     text-align: initial;
   }
 
+  .projects__container{
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: var(--mb-2);
+  }
+
   .home__container{
     gap: 1.5rem;
   }
 
   .home__button-movil{
     display: none;
-  }
-
-  .projects__container{
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: var(--mb-2);
   }
 
   .interests__container{
