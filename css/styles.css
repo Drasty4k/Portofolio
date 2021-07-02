@@ -224,6 +224,15 @@ a{
   text-decoration: none;
 }
 
+a:-webkit-any-link{
+  color: var(--title-color);
+  transition: all 0.1s linear;
+}
+
+a:-webkit-any-link:hover{
+  color: #e31b23
+}
+
 img{
   max-width: 100%;
   height: auto;
@@ -472,6 +481,13 @@ img{
 .education__title,
 .experience__title{
   font-size: var(--h3-font-size);
+}
+
+.experience__title .bx{
+  position: relative;
+  top: 1.8px;
+  right: -3px;
+  font-size: 14px;
 }
 
 .education__studies,
