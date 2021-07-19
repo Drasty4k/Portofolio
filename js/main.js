@@ -108,7 +108,7 @@ let resumeButton = document.getElementById('resume-button')
 var opt = {
     margin:       0,
     filename:     'Barbuta Dragos Resume.pdf',
-    image:        { type: 'jpeg', quality: 0.98 },
+    image:        { type: 'jpeg', quality: 0.77 },
     html2canvas:  { scale: 4 },
     jsPDF:        { format: 'a4', orientation: 'portrait' }
   };
