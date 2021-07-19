@@ -102,7 +102,8 @@ body.scale-cv{
 /*========== Classes modified to reduce size and print on A4 sheet ==========*/
 .scale-cv .change-theme,
 .scale-cv .generate-pdf,
-.scale-cv .certificate__title .bx-link{
+.scale-cv .certificate__title .bx-link,
+.scale-cv .experience__title .bx{
   display: none;
 }
 
@@ -111,16 +112,17 @@ body.scale-cv{
 }
 
 .scale-cv .section{
-  padding: 1.5rem 0 .80rem;
+  padding: 0.70rem 0 .80rem;
 }
 
 .scale-cv .section-title{
-  margin-bottom: .75rem;
+  margin-bottom: 0.85rem;
+  margin-top: -9px;
 }
 
 .scale-cv .resume__left,
 .scale-cv, .resume__right{
-  padding: 0.26rem 1rem;
+  padding: 0.29rem 0.80rem;
 }
 
 .scale-cv .home__img{
@@ -129,7 +131,7 @@ body.scale-cv{
 }
 
 .scale-cv .home__container{
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .scale-cv .home__data{
@@ -150,11 +152,13 @@ body.scale-cv{
 .scale-cv .education__container,
 .scale-cv .experience__container,
 .scale-cv .certificate__container{
-  gap: 1rem;
+  gap: 0.60rem;
 }
 
 .scale-cv .certificate__title a{
   color: var(--text-color);
+  font-size: var(--normal-font-size);
+  margin-top: -40px;
 }
 
 .scale-cv .education__time,
@@ -184,6 +188,7 @@ body.scale-cv{
 .scale-cv .linkToPortofolio{
   display: block;
   margin-top: -12px;
+  font-size: var(--small-font-size);
 }
 
 .scale-cv .projects__content .projects__title{
@@ -198,10 +203,6 @@ body.scale-cv{
 .scale-cv .education__data,
 .scale-cv .experience__data{
   gap: .25rem;
-}
-
-.scale-cv .experience__title .bx{
-  display: none;
 }
 
 .scale-cv .experience__title{

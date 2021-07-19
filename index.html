@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--========== BOX ICONS ==========-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
 
     <!--========== HTML2PDF ==========-->
     <script src="js/html2pdf.bundle.min.js"></script>
@@ -14,305 +17,433 @@
     <script src="js/main.js" defer></script>
 
     <!--========== CSS ==========-->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
 
     <title>Barbuta Dragos</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!--========== HEADER ==========-->
     <header class="l-header" id="header">
-        <nav class="nav bd-container">
-            <a href="#" class="nav__logo">Barbuta Dragos</a>
+      <nav class="nav bd-container">
+        <a href="#" class="nav__logo">Barbuta Dragos</a>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
-                            <i class="bx bx-home nav__icon"></i>Home
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#profile" class="nav__link">
-                            <i class="bx bx-user nav__icon"></i>Profile
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#education" class="nav__link">
-                            <i class="bx bx-book nav__icon"></i>Education
-                        </a>
-                    </li>
-                    
-                    <li class="nav__item">
-                        <a href="#experience" class="nav__link">
-                            <i class="bx bx-briefcase-alt nav__icon"></i>Experience
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#certificates" class="nav__link">
-                            <i class="bx bx-award nav__icon"></i>Certificates
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#projects" class="nav__link">
-                            <i class="bx bx-game nav__icon"></i>Projects
-                        </a>
-                    </li> 
-                </ul>
-            </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="bx bx-home nav__icon"></i>Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#profile" class="nav__link">
+                <i class="bx bx-user nav__icon"></i>Profile
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#education" class="nav__link">
+                <i class="bx bx-book nav__icon"></i>Education
+              </a>
+            </li>
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="bx bx-grid-alt"></i>
-            </div>
-        </nav>
+            <li class="nav__item">
+              <a href="#experience" class="nav__link">
+                <i class="bx bx-briefcase-alt nav__icon"></i>Experience
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#certificates" class="nav__link">
+                <i class="bx bx-award nav__icon"></i>Certificates
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">
+                <i class="bx bx-game nav__icon"></i>Projects
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </nav>
     </header>
 
     <main class="l-main bd-container">
+      <!-- All elements within this div, is generated in PDF -->
+      <div class="resume" id="area-cv">
+        <div class="resume__left">
+          <!--========== HOME ==========-->
+          <section class="home" id="home">
+            <div class="home__container section bd-grid">
+              <div class="home__data bd-grid">
+                <p class="linkToPortofolio">
+                  Link to the <b>live version</b>:
+                  <a href="https://drasty4k.github.io/Portofolio/"
+                    >https://drasty4k.github.io/Portofolio/</a
+                  >
+                </p>
+                <img src="img/profile.jpg" alt="" class="home__img" />
 
-        <!-- All elements within this div, is generated in PDF -->
-        <div class="resume" id="area-cv">
-            <div class="resume__left">
+                <h1 class="home__title">BARBUTA <b>DRAGOS</b></h1>
+                <h3 class="home__profession">Web Developer</h3>
 
-                <!--========== HOME ==========-->
-                <section class="home" id="home">
-                    <div class="home__container section bd-grid">
-                        <div class="home__data bd-grid">
-                            <p class="linkToPortofolio">Link to my <b>portofolio</b>: <a href="https://drasty4k.github.io/Portofolio/">https://drasty4k.github.io/Portofolio/</a></p>
-                            <img src="img/profile.jpg" alt="" class="home__img">
-
-                            <h1 class="home__title">BARBUTA <b>DRAGOS</b></h1>
-                            <h3 class="home__profession">Web Developer</h3>
-
-                            <!-- <div>
+                <!-- <div>
                                 <a download="" href="assets/pdf/ResumeCv.pdf" class="home__button-movil">Download</a>
                             </div> -->
-                        </div>
+              </div>
 
-                        <div class="home__address bd-grid">
-                            <span class="home__information">
-                                <i class="bx bx-map home__icon"></i> Bucharest, Romania
-                            </span>
-                            <span class="home__information">
-                                <i class="bx bx-envelope home__icon"></i> barbuta.dragos12@gmail.com
-                            </span>
-                            <span class="home__information">
-                                <i class="bx bx-phone home__icon"></i> +40723763032
-                            </span>
-                        </div>
-                    </div>
-                    <!-- Theme change button -->
-
-                    <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
-
-
-                    <!-- Button to generate and download the pdf. Available for desktop. -->
-
-                    <i class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i>
-                </section>
-
-                <!--========== SOCIAL ==========-->
-                <section class="social section">
-
-                    <h2 class="section-title">SOCIAL</h2>
-
-                    <div class="social__container bd-grid">
-                        <a href="https://www.linkedin.com/in/dragos-barbuta/" target="_blank" class="social__link">
-                            <i class="bx bxl-linkedin-square social__icon"></i> @dragosbarbuta
-                        </a>
-                        <a href="https://github.com/Drasty4k" target="_blank" class="social__link">
-                            <i class="bx bxl-github social__icon"></i> @drasty4k
-                        </a>
-                        <a href="https://www.instagram.com/dragos.dev/" target="_blank" class="social__link">
-                            <i class="bx bxl-instagram social__icon"></i> @dragos.dev
-                        </a>
-                    </div>
-
-                </section>
-
-                <!--========== PROFILE ==========-->
-                <section class="profile section" id="profile">
-                    <h2 class="section-title">Profile</h2>
-
-                    <p class="profile__description">
-                        I am a person seeking an opportunity to be in a challenging environment to provide my skills and
-                        to utilize my knowledge in the growth of my team and myself. Trying to improve,
-                        day by day, to be a better person than the day before has thaught me what adventure
-                        i want to be in and i found that i'm so passionate about the internet and websites, how they work, 
-                        the technologies behind them and how to design them for a great User Experience.
-                    </p>
-                </section>
-
-                <!--========== EDUCATION ==========-->
-                <section class="education section" id="education">
-                    <h2 class="section-title">Education</h2>
-
-                    <div class="education__container bd-grid">
-                        <div class="education__content">
-                            <div class="education__time">
-                                <span class="education__rounder"></span>
-                                <span class="education__line"></span>
-                            </div>
-
-                            <div class="education__data bd-grid">
-                                <h3 class="education__title">WEB DESIGN</h3>
-                                <span class="education__studies">Master Web Design in Photoshop</span>
-                                <span class="education__year">2019 - 2019</span>
-                            </div>
-                        </div>
-
-                        <div class="education__content">
-                            <div class="education__time">
-                                <span class="education__rounder"></span>
-                                <span class="education__line"></span>
-                            </div>
-
-                            <div class="education__data bd-grid">
-                                <h3 class="education__title">FRONTEND DEVELOPER</h3>
-                                <span class="education__studies">Link Academy</span>
-                                <span class="education__year">2020 - 2021</span>
-                            </div>
-                        </div>
-
-                        <div class="education__content">
-                            <div class="education__time">
-                                <span class="education__rounder"></span>
-                                <!-- <span class="education__line"></span> -->
-                            </div>
-
-                            <div class="education__data bd-grid">
-                                <h3 class="education__title">VUE DEVELOPER</h3>
-                                <span class="education__studies">Vue - The Complete Guide</span>
-                                <span class="education__year">2021 - 2021</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
+              <div class="home__address bd-grid">
+                <span class="home__information">
+                  <i class="bx bx-map home__icon"></i> Bucharest, Romania
+                </span>
+                <span class="home__information">
+                  <i class="bx bx-envelope home__icon"></i>
+                  barbuta.dragos12@gmail.com
+                </span>
+                <span class="home__information">
+                  <i class="bx bx-phone home__icon"></i> +40723763032
+                </span>
+              </div>
             </div>
+            <!-- Theme change button -->
 
-            <div class="resume__right">
+            <i
+              class="bx bx-moon change-theme"
+              title="Theme"
+              id="theme-button"
+            ></i>
 
-                <!--========== EXPERIENCE ==========-->
-                <section class="experience section" id="experience">
-                    <h2 class="section-title">Experience</h2>
+            <!-- Button to generate and download the pdf. Available for desktop. -->
 
-                    <div class="experience__container bd-grid">
-                        <div class="experience__content">
-                            <div class="experience__time">
-                                <span class="experience__rounder"></span>
-                                <!-- <span class="experience__line"></span> -->
-                            </div>
+            <i
+              class="bx bx-download generate-pdf"
+              title="Generate PDF"
+              id="resume-button"
+            ></i>
+          </section>
 
-                            <div class="experience__data bd-grid">
-                                <h3 class="experience__title">Student at <b><a href="https://www.link-academy.com/frontend-javascript-development" target="_blank">Link Academy<i class='bx bx-link-external'></i></a></b></h3>
-                                <span class="experience__company">From 2020 to 2021</span>
-                                <p class="experience__description">I'm curenntly a student at Link Academy, learning about Frontend Development
-                                    and meeting people with the same passion as me about tehnology and how the internet works.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+          <!--========== SOCIAL ==========-->
+          <section class="social section">
+            <h2 class="section-title">SOCIAL</h2>
 
-                <!--========== CERTIFICATES ==========-->
-                <section class="certificate section" id="certificates">
-                    <h2 class="section-title">Certificates</h2>
-
-                    <div class="certificate__container bd-grid">
-                        <div class="certificate__content">
-                            <h3 class="certificate__title"><a target="_blank" href="https://www.udemy.com/course/vuejs-2-the-complete-guide/">Vue - The Complete Guide<i class='bx bx-link'></i></a></h3>
-                            <p class="certificate__description">In this course I learned about syntax in Vue 3 and concepts behind it,
-                                including both the tehnology for Multi && Single-Page-Applications, Vue Router, Vuex Store,
-                                and of course the brand-new Composition API, all of those with the help of building some 
-                                interesting projects.</p>
-                        </div>
-                        <div class="certificate__content">
-                            <h3 class="certificate__title"><a target="_blank" href="https://www.udemy.com/course/master-web-design-in-photoshop/">Master Web Design in Photoshop<i class='bx bx-link'></i></a></h3>
-                            <p class="certificate__description">This course was compoused of countless techniques about the principles of web design,
-                                typography, how to design or chose beautiful graphics and icons, and how to build awesome layouts
-                                after a brief from a client.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <!--========== PROJECTS ==========-->
-                <section class="projects section" id="projects">
-                    <h2 class="section-title">Projects</h2>
-
-                    <div class="projects__container bd-grid">
-                        <div class="projects__content">
-                            <h3 class="projects__title">Find A Coach</h3>
-                                <img src="img/findacoach.JPG" alt="" class="projects__img">
-                            <p class="left"><a class="coach" target="_blank" href="https://musing-leavitt-785e8e.netlify.app/">See Live</a></p>
-                            <p class="right"><a class="coach" target="_blank" href="https://github.com/Drasty4k/Find-a-Coach" >Code Source </a></p>
-                            <p class="projects__description">
-                                A project made in <b>Vue</b> About Finding a coach in web industry.
-                            </p>
-                        </div>
-                        <div class="projects__content">
-                            <h3 class="projects__title">Monster Slayer Game</h3> 
-                                <img src="img/monsterslayer.JPG" alt="" class="projects__img">
-                            <p class="left"><a class="game" target="_blank" href="https://drasty4k.github.io/MonsterSlayer-game/">See Live</a></p>
-                            <p class="right"><a class="game" target="_blank" href="https://github.com/Drasty4k/MonsterSlayer-game">Code Source</a></p>
-                            <p class="projects__description">
-                                A little game made with <b>Vue</b> where you can kill a monster.
-                            </p>
-                        </div>
-                            <div class="projects__content">
-                                <h3 class="projects__title">CrownClothing Shop</h3>
-                                    <img src="img/crownclothing.JPG" alt="" class="projects__img">
-                                <p class="left"><a class="shop" target="_blank" href="https://crown-clohing-live.herokuapp.com/">See Live</a></p>
-                                <p class="right"><a class="shop" target="_blank" href="https://github.com/Drasty4k/Crown-Clothing" >Code Source </a></p>
-                                <p class="projects__description">
-                                    An online shop built with <b>React</b> and other libraries.
-                                </p>
-                            </div>
-                            <div class="projects__content">
-                                <h3 class="projects__title">LevelUp Page</h3> 
-                                    <img src="img/levelup.JPG" alt="" class="projects__img">
-                                <p class="left"><a class="page" target="_blank" href="https://drasty4k.github.io/LevelUp-Landing-Page/">See Live</a></p>
-                                <p class="right"><a class="page" target="_blank" href="https://github.com/Drasty4k/LevelUp-Landing-Page">Code Source</a></p>
-                                <p class="projects__description">
-                                    A responsive template build with <b>HTML, Css, Boostrap</b> with some animation
-                                </p>
-                            </div>
-                        
-                    </div>
-                </section>
-                
-                <!--========== INTERESTS ==========-->
-                <section class="interests section">
-                    <h2 class="section-title">Interests</h2>
-
-                    <div class="interests__container bd-grid">
-                        <div class="interests__content">
-                            <i class="bx bx-headphone interests__icon"></i>
-                            <span class="interests__name">Music</span>
-                        </div>
-                        <div class="interests__content">
-                            <i class="bx bxs-plane-alt interests__icon"></i>
-                            <span class="interests__name">Travel</span>
-                        </div>
-                        <div class="interests__content">
-                            <i class="bx bx-book interests__icon"></i>
-                            <span class="interests__name">Reading</span>
-                        </div>
-                        <div class="interests__content">
-                            <i class="bx bx-dumbbell interests__icon"></i>
-                            <span class="interests__name">Fitness</span>
-                        </div>
-                    </div>
-                </section>
+            <div class="social__container bd-grid">
+              <a
+                href="https://www.linkedin.com/in/dragos-barbuta/"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="bx bxl-linkedin-square social__icon"></i>
+                @dragosbarbuta
+              </a>
+              <a
+                href="https://github.com/Drasty4k"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="bx bxl-github social__icon"></i> @drasty4k
+              </a>
+              <a
+                href="https://www.instagram.com/dragos.dev/"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="bx bxl-instagram social__icon"></i> @dragos.dev
+              </a>
             </div>
+          </section>
+
+          <!--========== PROFILE ==========-->
+          <section class="profile section" id="profile">
+            <h2 class="section-title">Profile</h2>
+
+            <p class="profile__description">
+              I am a person seeking an opportunity to be in a challenging
+              environment to provide my skills and to utilize my knowledge in
+              the growth of my team and myself. Trying to improve, day by day,
+              to be a better person than the day before has thaught me what
+              adventure i want to be in and i found that i'm so passionate about
+              the internet and websites, how they work, the technologies behind
+              them and how to design them for a great User Experience.
+            </p>
+          </section>
+
+          <!--========== EDUCATION ==========-->
+          <section class="education section" id="education">
+            <h2 class="section-title">Education</h2>
+
+            <div class="education__container bd-grid">
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <span class="education__line"></span>
+                </div>
+
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">WEB DESIGN</h3>
+                  <span class="education__studies"
+                    >Master Web Design in Photoshop</span
+                  >
+                  <span class="education__year">2019 - 2019</span>
+                </div>
+              </div>
+
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <span class="education__line"></span>
+                </div>
+
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">FRONTEND DEVELOPER</h3>
+                  <span class="education__studies">Link Academy</span>
+                  <span class="education__year">2020 - 2021</span>
+                </div>
+              </div>
+
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <span class="education__line"></span>
+                </div>
+
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">VUE DEVELOPER</h3>
+                  <span class="education__studies"
+                    >Vue - The Complete Guide</span
+                  >
+                  <span class="education__year">2021 - 2021</span>
+                </div>
+              </div>
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <!-- <span class="education__line"></span> -->
+                </div>
+
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">REACT DEVELOPER</h3>
+                  <span class="education__studies"
+                    >Complete React Developer</span
+                  >
+                  <span class="education__year">2021 - 2021</span>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
+
+        <div class="resume__right">
+          <!--========== EXPERIENCE ==========-->
+          <section class="experience section" id="experience">
+            <h2 class="section-title">Experience</h2>
+
+            <div class="experience__container bd-grid">
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <!-- <span class="experience__line"></span> -->
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">
+                    Student at
+                    <b
+                      ><a
+                        href="https://www.link-academy.com/frontend-javascript-development"
+                        target="_blank"
+                        >Link Academy<i class="bx bx-link-external"></i></a
+                    ></b>
+                  </h3>
+                  <span class="experience__company">From 2020 to 2021</span>
+                  <p class="experience__description">
+                    I'm curenntly a student at Link Academy, learning about
+                    Frontend Development and meeting people with the same
+                    passion as me about the web industry. Previously studied
+                    programs:<br />-<b>HTML</b>, <b>CSS</b>, <b>Boostrap</b>,
+                    <b>JavaScript</b>, <b>OOP</b>, <b>Vue JS</b>, <b>React JS</b
+                    ><br />
+                    -<b>Node JS</b>, <b>Express JS</b>, <b>Docker</b>,
+                    <b>GitHub</b><br />
+                    -<b>MySQL</b>, <b>Redis</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--========== CERTIFICATES ==========-->
+          <section class="certificate section" id="certificates">
+            <h2 class="section-title">Certificates</h2>
+
+            <div class="certificate__container bd-grid">
+              <div class="certificate__content">
+                <h3 class="certificate__title">
+                  <a
+                    target="_blank"
+                    href="https://www.udemy.com/course/vuejs-2-the-complete-guide/"
+                    >Vue - The Complete Guide<i class="bx bx-link"></i
+                  ></a>
+                </h3>
+                <p class="certificate__description">
+                  In this course I learned about syntax in Vue 3 and concepts
+                  behind it, including both the tehnology for
+                  <b>Multi && Single-Page-Applications</b>, <b>Vue Router</b>,
+                  <b>Vuex Store</b>, and of course the brand-new
+                  <b>Composition API</b>, all of those with the help of building
+                  some interesting projects.
+                </p>
+              </div>
+              <div class="certificate__content">
+                <h3 class="certificate__title">
+                  <a
+                    target="_blank"
+                    href="https://www.udemy.com/course/complete-react-developer-zero-to-mastery/"
+                    >Complete React Developer (w/ Redux, Hooks, GraphQL)<i
+                      class="bx bx-link"
+                    ></i
+                  ></a>
+                </h3>
+                <p class="certificate__description">
+                  This React course was about creating a complex project from
+                  scratch; which taught me technologies such as
+                  <b>React Router</b>, <b>Redux</b>, <b>Redux Saga</b>,
+                  <b>Asynchronous Redux</b>, <b>React Hooks</b>,
+                  <b>Context API</b>, <b>React Suspense + React Lazy</b>,
+                  <b>Styled-Components</b>, <b>React Perfomance</b> as well as
+                  the thought process behind chosing the right tools to utilize
+                  in my various programs and what you need to know to be a good
+                  React developer.
+                </p>
+              </div>
+              <div class="certificate__content">
+                <h3 class="certificate__title">
+                  <a
+                    target="_blank"
+                    href="https://www.udemy.com/course/master-web-design-in-photoshop/"
+                    >Master Web Design in Photoshop<i class="bx bx-link"></i
+                  ></a>
+                </h3>
+                <p class="certificate__description">
+                  This course was compoused of countless techniques about the
+                  principles of web design, typography, how to design or chose
+                  beautiful graphics and icons, and how to build awesome layouts
+                  after a brief from a client.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!--========== PROJECTS ==========-->
+          <section class="projects section" id="projects">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="projects__container bd-grid">
+              <div class="projects__content">
+                <h3 class="projects__title">Find A Coach</h3>
+                <img src="img/findacoach.JPG" alt="" class="projects__img" />
+                <p class="left">
+                  <a
+                    class="coach"
+                    target="_blank"
+                    href="https://musing-leavitt-785e8e.netlify.app/"
+                    >See Live</a
+                  >
+                </p>
+                <p class="right">
+                  <a
+                    class="coach"
+                    target="_blank"
+                    href="https://github.com/Drasty4k/Find-a-Coach"
+                    >Code Source
+                  </a>
+                </p>
+                <p class="projects__description">
+                  A project made in <b>Vue</b>
+                  About Finding a coach in web industry.
+                </p>
+              </div>
+              <div class="projects__content">
+                <h3 class="projects__title">Monster Slayer Game</h3>
+                <img src="img/monsterslayer.JPG" alt="" class="projects__img" />
+                <p class="left">
+                  <a
+                    class="game"
+                    target="_blank"
+                    href="https://drasty4k.github.io/MonsterSlayer-game/"
+                    >See Live</a
+                  >
+                </p>
+                <p class="right">
+                  <a
+                    class="game"
+                    target="_blank"
+                    href="https://github.com/Drasty4k/MonsterSlayer-game"
+                    >Code Source</a
+                  >
+                </p>
+                <p class="projects__description">
+                  A little game made with <b>Vue</b> where you can kill a
+                  monster.
+                </p>
+              </div>
+              <div class="projects__content">
+                <h3 class="projects__title">CrownClothing Shop</h3>
+                <img src="img/crownclothing.JPG" alt="" class="projects__img" />
+                <p class="left">
+                  <a
+                    class="shop"
+                    target="_blank"
+                    href="https://crown-clohing-live.herokuapp.com/"
+                    >See Live</a
+                  >
+                </p>
+                <p class="right">
+                  <a
+                    class="shop"
+                    target="_blank"
+                    href="https://github.com/Drasty4k/Crown-Clothing"
+                    >Code Source
+                  </a>
+                </p>
+                <p class="projects__description">
+                  An online shop built with <b>React</b> and other libraries.
+                </p>
+              </div>
+              <div class="projects__content">
+                <h3 class="projects__title">LevelUp Page</h3>
+                <img src="img/levelup.JPG" alt="" class="projects__img" />
+                <p class="left">
+                  <a
+                    class="page"
+                    target="_blank"
+                    href="https://drasty4k.github.io/LevelUp-Landing-Page/"
+                    >See Live</a
+                  >
+                </p>
+                <p class="right">
+                  <a
+                    class="page"
+                    target="_blank"
+                    href="https://github.com/Drasty4k/LevelUp-Landing-Page"
+                    >Code Source</a
+                  >
+                </p>
+                <p class="projects__description">
+                  A responsive template build with
+                  <b>HTML, Css, Boostrap</b> and some animations
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
     </main>
 
     <!--========== SCROLL TOP ==========-->
     <a href="#" class="scrolltop" id="scroll-top">
-        <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+      <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
     </a>
-
-
-</body>
-
+  </body>
 </html>
