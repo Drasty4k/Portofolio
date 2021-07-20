@@ -90,6 +90,15 @@ themeButton.addEventListener('click', () => {
 
 function scaleCv() {
     document.body.classList.add('scale-cv')
+    document.querySelector('.skill-per.one').classList.remove('skill-animation')
+    document.querySelector('.skill-per.two').classList.remove('skill-animation')
+    document.querySelector('.skill-per.three').classList.remove('skill-animation')
+    document.querySelector('.skill-per.four').classList.remove('skill-animation')
+    document.querySelector('.skill-per.five').classList.remove('skill-animation')
+    document.querySelector('.skill-per.six').classList.remove('skill-animation')
+    document.querySelector('.skill-per.seven').classList.remove('skill-animation')
+    document.querySelector('.skill-per.eight').classList.remove('skill-animation')
+    document.querySelector('.skill-per.nine').classList.remove('skill-animation')
 }
 
 /*==================== REMOVE THE SIZE WHEN THE CV IS DOWNLOADED ====================*/ 
